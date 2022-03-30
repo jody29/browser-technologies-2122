@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form action="/winkelmand" method="post">
+        <fieldset>
+            <legend>Color</legend>
+
+            <input type="radio" name="color" id="black" value="black" required>
+            <label for="black">black</label>
+
+            <input type="radio" name="color" id="white" value="white" required>
+            <label for="white">white</label>
+            
+            <input type="radio" name="color" id="blue" value="blue" required>
+            <label for="blue">blue</label>
+            
+            <input type="radio" name="color" id="red" value="red" required>
+            <label for="red">red</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">male</label>
+
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">female</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Size</legend>
+
+            <select name="size" id="">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Text</legend>
+
+            <input type="text" name="text" placeholder="text voor op je shirt" required>
+        </fieldset>
+
+        <button type="submit">Add to cart</button>
+    </form>
+</body>
+</html>
