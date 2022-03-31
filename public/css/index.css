@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+header nav {
+    display: flex;
+    padding: 1em;
+}
+
+header nav p:last-of-type {
+    margin-left: auto;
+}
+
 body {
     font-family: sans-serif;
     display: flex;
@@ -40,6 +49,15 @@ legend {
 input[type='radio'] {
     position: absolute;
     opacity: 0;
+}
+
+input[type='radio']:focus + label {
+    border: 2px solid blue;
+}
+
+input[type='radio']:checked + label {
+    background-color: black;
+    color: white;
 }
 
 input {

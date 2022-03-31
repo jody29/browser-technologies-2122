@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <% data.data.forEach(key => { %>
+        <p><%= key.color %></p>
+        <a href="/?edit=<%= key.id %>">Edit</a>
+        <% }) %>
+</body>
+</html>

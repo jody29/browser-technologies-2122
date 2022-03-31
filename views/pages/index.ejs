@@ -2,24 +2,36 @@
 <html lang="en">
 <head>
     <%- include('../partials/head') %>
-    <title><%= title %></title>
+    <title>Nerdy T-Shirt</title>
 </head>
 <body>
-    <h1><%= title %></h1>
-    <form action="/winkelmand" method="post">
+    <%- include('../partials/header') %>
+    <form action="/addShoppingBag" method="post">
         <fieldset>
             <legend>Color</legend>
 
-            <input type="radio" name="color" id="black" value="black" required>
+            <input type="radio" name="color" id="black" value="black" required
+            <% if(shirt) { %>
+                <% if(shirt.color === 'black') { %> checked <% }} %>
+            >
             <label for="black">black</label>
 
-            <input type="radio" name="color" id="white" value="white" required>
+            <input type="radio" name="color" id="white" value="white" required
+            <% if(shirt) { %>
+                <% if(shirt.color === 'white') { %> checked <% }} %>
+            >
             <label for="white">white</label>
             
-            <input type="radio" name="color" id="blue" value="blue" required>
+            <input type="radio" name="color" id="blue" value="blue" required
+            <% if(shirt) { %>
+                <% if(shirt.color === 'blue') { %> checked <% }} %>
+            >
             <label for="blue">blue</label>
             
-            <input type="radio" name="color" id="red" value="red" required>
+            <input type="radio" name="color" id="red" value="red" required
+            <% if(shirt) { %>
+                <% if(shirt.color === 'red') { %> checked <% }} %>
+            >
             <label for="red">red</label>
             
         </fieldset>
@@ -51,6 +63,8 @@
 
             <input type="text" name="text" placeholder="text voor op je shirt" required>
         </fieldset>
+
+        <input type="hidden" name="id" value="<%= id %>">
 
         <button type="submit">Add to cart</button>
     </form>
