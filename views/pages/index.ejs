@@ -39,17 +39,23 @@
         <fieldset>
             <legend>Gender</legend>
 
-            <input type="radio" name="gender" id="male" value="male" required>
+            <input type="radio" name="gender" id="male" value="male" required
+            <% if(shirt) { %>
+                <% if(shirt.gender === 'male') { %> checked <% }} %>
+            >
             <label for="male">male</label>
 
-            <input type="radio" name="gender" id="female" value="female" required>
+            <input type="radio" name="gender" id="female" value="female" required
+            <% if(shirt) { %>
+                <% if(shirt.gender === 'female') { %> checked <% }} %>
+            >
             <label for="female">female</label>
         </fieldset>
         
         <fieldset>
             <legend>Size</legend>
 
-            <select name="size" id="">
+            <select name="size">
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
