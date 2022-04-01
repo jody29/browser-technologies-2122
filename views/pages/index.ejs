@@ -101,7 +101,7 @@
         <fieldset>
             <legend>Text</legend>
 
-            <input type="text" name="text" placeholder="text voor op je shirt" required
+            <input type="text" name="text" maxlength="6" placeholder="text voor op je shirt" required
             <% if (shirt) { %>
             <% if (shirt.text) { %> value='<%= shirt.text %>' <% }} %>
             >

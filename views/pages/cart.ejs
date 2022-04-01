@@ -32,10 +32,20 @@
                   />
                 </g>
               </svg>
-            <h4><%= key.gender %></h4>
-            <h4><%= key.size %></h4>
+
+              <div>
+              <h3><%= key.gender %> <%= key.color %></h3>
+                <div>
+                  <p><strong>size:</strong> <%= key.size %></p>
+                  <p><strong>text:</strong> <%= key.text %></p>
+                </div>
+              </div>
             <a href="/?edit=<%= key.id %>">Edit</a>
         </article>
     <% }) %>
+    <% if (amount === 0) { %>
+      <h2>your cart is empty :(</h2>
+    <% } %>
+    <a href="/" class="newShirt">create new t-shirt</a>
 </body>
 </html>
