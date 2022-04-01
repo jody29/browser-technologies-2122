@@ -56,18 +56,35 @@
             <legend>Size</legend>
 
             <select name="size">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
+                <option value="XS"
+                <% if(shirt) { %>
+                    <% if(shirt.size === 'XS') { %> selected <% }} %>
+                >XS</option>
+                <option value="S"
+                <% if(shirt) { %>
+                    <% if(shirt.size === 'S') { %> selected <% }} %>
+                >S</option>
+                <option value="M"
+                <% if(shirt) { %>
+                    <% if(shirt.size === 'M') { %> selected <% }} %>
+                >M</option>
+                <option value="L"
+                <% if(shirt) { %>
+                    <% if(shirt.size === 'L') { %> selected <% }} %>
+                >L</option>
+                <option value="XL"
+                <% if(shirt) { %>
+                    <% if(shirt.size === 'XL') { %> selected <% }} %>
+                >XL</option>
             </select>
         </fieldset>
 
         <fieldset>
             <legend>Text</legend>
 
-            <input type="text" name="text" placeholder="text voor op je shirt" required>
+            <input type="text" name="text" placeholder="text voor op je shirt" required
+            <% if (shirt.text) { %> value='<%= shirt.text %>' <% } %>
+            >
         </fieldset>
 
         <input type="hidden" name="id" value="<%= id %>">

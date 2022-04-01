@@ -1,11 +1,25 @@
 {
   "data": [
     {
+      "color": "blue",
+      "gender": "female",
+      "size": "L",
+      "text": "test",
+      "id": "e228b640-786c-416a-85bc-fdf8b386ed8a"
+    },
+    {
       "color": "black",
       "gender": "male",
       "size": "L",
       "text": "test",
-      "id": "e228b640-786c-416a-85bc-fdf8b386ed8a"
+      "id": "85725d66-00d2-4ccf-97ef-ffbee3c24729"
+    },
+    {
+      "color": "black",
+      "gender": "female",
+      "size": "S",
+      "text": "mooi",
+      "id": "442a0e08-7c2a-421f-a337-fe0bca5c2ac4"
     }
   ]
 }
