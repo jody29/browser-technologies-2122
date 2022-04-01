@@ -1,0 +1,36 @@
+body {
+    padding: 1em;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    padding: 1em;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+form {
+    background-color: white;
+    width: fit-content;
+    padding: 0;
+    margin-left: auto;
+}
+
+form button {
+    margin-top: 0;
+    padding: .5em .7em;
+    border-radius: 5em;
+}
+

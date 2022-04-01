@@ -6,6 +6,25 @@
 </head>
 <body>
     <%- include('../partials/header') %>
+    <section>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="80%" viewBox="0 0 554.84 593.606" transform="translate(0, 40)">
+            <defs>
+              <clipPath id="clip-path">
+                <rect id="Rectangle_1282" data-name="Rectangle 1282" width="554.841" height="593.607" fill="none"/>
+              </clipPath>
+            </defs>
+            <g id="Group_1198" data-name="Group 1198" clip-path="url(#clip-path)">
+              <path fill="<% if(shirt) {%><%= shirt.color %><% } else {%> #000000 <% } %>"
+              stroke="black" 
+              id="Path_763" 
+              data-name="Path 763" 
+              d="M111.344,232.227c-2.667,9.038-4.858,18.262-8.293,27-1.022,2.6-6.052,5.936-8.367,5.366-29.172-7.186-58.188-15-87.226-22.722-5.079-1.351-8.887-3.861-6.941-10.131C17.486,177.05,35.24,122.749,65.965,73.683c10.19-16.272,27.053-21.942,42.461-29.84C137.776,28.8,167.627,14.734,197.8,0c15.011,43.866,49.428,55.61,89.986,52.71,38.036-2.719,60.272-21.094,69.689-52.7,3.618,1.582,7.166,2.962,10.565,4.645,34.178,16.932,68.192,34.2,102.562,50.736,13.715,6.6,20.41,18.849,27.12,30.853,25.368,45.379,42.335,94.21,56.944,143.878.911,3.1-2.008,10.26-4.457,10.963-29.913,8.591-60.039,16.461-90.247,23.961-1.9.472-6.275-3.19-7.225-5.767-3.1-8.417-5.154-17.223-10.258-25.6,1.379,119.743,2.759,239.486,4.146,359.927H109.271q2.135-181.132,4.258-361.209l-2.185-.172" 
+              transform="translate(0, 0)"
+              />
+            </g>
+          </svg>
+          
+    </section>
     <form action="/addShoppingBag" method="post">
         <fieldset>
             <legend>Color</legend>
@@ -83,7 +102,8 @@
             <legend>Text</legend>
 
             <input type="text" name="text" placeholder="text voor op je shirt" required
-            <% if (shirt.text) { %> value='<%= shirt.text %>' <% } %>
+            <% if (shirt) { %>
+            <% if (shirt.text) { %> value='<%= shirt.text %>' <% }} %>
             >
         </fieldset>
 

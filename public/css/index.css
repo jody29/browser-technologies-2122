@@ -7,10 +7,13 @@
 header nav {
     display: flex;
     padding: 1em;
+    padding-bottom: 0;
+    align-items: center;
 }
 
-header nav p:last-of-type {
+header nav a:last-of-type {
     margin-left: auto;
+    padding: 0;
 }
 
 body {

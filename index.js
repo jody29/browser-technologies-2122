@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     if (req.query.edit) {
-        const data = JSON.parse(fs.readFileSync('./data.json'))
+        const data = JSON.parse(fs.readFileSync('./voorhees.json'))
         const shirt = data.data.find(
             ({ id }) => id === req.query.edit
         )
@@ -34,10 +34,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/shoppingBag', (req, res) => {
-    const data = JSON.parse(fs.readFileSync('./data.json'))
+    const data = JSON.parse(fs.readFileSync('./voorhees.json'))
     const amount = data.data.length
-
-    console.log(data)
 
     res.render('pages/cart', {
         data,
@@ -46,7 +44,7 @@ app.get('/shoppingBag', (req, res) => {
 })
 
 app.post('/addShoppingBag', (req, res) => {
-    const data = JSON.parse(fs.readFileSync('./data.json'))
+    const data = JSON.parse(fs.readFileSync('./voorhees.json'))
     const shirt = data.data.find(({ id }) => id == req.body.id)
     
     if (shirt) {
@@ -59,8 +57,18 @@ app.post('/addShoppingBag', (req, res) => {
     }
 
     const stringData = JSON.stringify(data, null, 2)
-    fs.writeFileSync('data.json', stringData)
+    fs.writeFileSync('voorhees.json', stringData)
 
+    res.redirect('/shoppingBag')
+})
+
+app.post('/emptyShoppingBag', (req, res) => {
+    const data = JSON.parse(fs.readFileSync('./voorhees.json'))
+    data.data.length = 0
+
+    const stringData = JSON.stringify(data, null, 2)
+    fs.writeFileSync('voorhees.json', stringData)
+    
     res.redirect('/shoppingBag')
 })
 
