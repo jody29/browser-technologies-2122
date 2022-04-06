@@ -1,3 +1,11 @@
 {
-  "data": []
+  "data": [
+    {
+      "color": "black",
+      "gender": "male",
+      "size": "L",
+      "text": "HTML",
+      "id": "1b1df65c-0d66-4623-a6d2-3cced2f5c1dd"
+    }
+  ]
 }

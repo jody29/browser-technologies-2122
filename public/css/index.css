@@ -91,3 +91,9 @@ button {
 #text {
     font-family: monospace;
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+    }
+}
