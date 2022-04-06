@@ -3,7 +3,6 @@
 
 [Live Demo](https://nerdy-shirt.herokuapp.com/)
 
-<<<<<<< HEAD
 ## Table of contents
 * [Wireflow]()
 * [Features]()
