@@ -47,7 +47,3 @@ For the pleasurable layer I added a live preview of the shirt that the user crea
     <li>Turning off javascript: user is still able to send customize a shirt but won't have a live preview. The user also won't be able to continue the form where the user left off. When the user added the product to the cart, the user will still be able to edit the shirt afterwards.</li>
   </ul>
 </details>
-<<<<<<< HEAD
-
-=======
->>>>>>> a22e65f81d1a57b526c9c1a48ffeebbeedcf2ba7
