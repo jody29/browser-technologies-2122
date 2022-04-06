@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+body {
+    height: 90vh;
+    font-family: sans-serif;
+}
+
 header nav {
     display: flex;
     padding: 1em;
@@ -16,11 +21,14 @@ header nav a:last-of-type {
     padding: 0;
 }
 
-body {
-    font-family: sans-serif;
+main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+}
+
+main section {
+    display: flex;
 }
 
 form {
@@ -31,6 +39,8 @@ form {
     padding: 0 1em 1em;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 fieldset {
@@ -94,6 +104,30 @@ button {
 
 @media screen and (min-width: 600px) {
     body {
+        height: 100vh;
+    }
+
+    main {
         display: flex;
+        flex-direction: row;
+        height: 92.5%;
+    }
+
+    main section {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    form {
+        height: 100%;
+        margin-left: 10em;
+    }
+
+    form label, input, select, button {
+        height: fit-content;
     }
 }

@@ -47,5 +47,8 @@
       <h2>your cart is empty :(</h2>
     <% } %>
     <a href="/" class="newShirt">create new t-shirt</a>
+    <% if (amount > 0) { %>
+    <a href="/pay" class="payButton">order shirts</a>
+    <% } %>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/pay.css">
+</head>
+<body>
+    <% if (amount > 0) { %>
+    <a href="/shoppingBag"> &lt; back</a>
+    <h1>Personal information</h1>
+
+    <form action="/payCart" method="post">
+        <fieldset>
+            <legend>Name</legend>
+            <input type="text" name="name" id="name" placeholder="your full name" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Phone-number</legend>
+            <input type="number" name="phone" id="phone" placeholder="your telephone number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>E-mail</legend>
+            <input type="email" name="email" id="email" placeholder="your email adress" required>
+        </fieldset>
+
+        <button type="submit">Pay order</button>
+
+    </form>
+
+    <% } else { %>
+        <h3 class="error">NOT AUTHORIZED</h3>
+        <p class="errormsg">no shirt created</p>
+        <a href="/" class="create">create new shirt</a>
+    <% } %>
+</body>
+</html>

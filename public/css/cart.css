@@ -72,3 +72,13 @@ article a {
     border: 1px dashed black;
 }
 
+.payButton {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+

@@ -44,6 +44,15 @@ app.get('/shoppingBag', (req, res) => {
     })
 })
 
+app.get('/pay', (req, res) => {
+    const data = JSON.parse(fs.readFileSync('./voorhees.json'))
+    const amount = data.data.length
+
+    res.render('pages/pay', {
+        amount
+    })
+})
+
 app.post('/addShoppingBag', (req, res) => {
     const data = JSON.parse(fs.readFileSync('./voorhees.json')) // read the json file
     const shirt = data.data.find(({ id }) => id == req.body.id) // find an object in the data array that has the same id as in the form
@@ -72,6 +81,17 @@ app.post('/emptyShoppingBag', (req, res) => {
     fs.writeFileSync('voorhees.json', stringData) // overwrite the old json file
     
     res.redirect('/shoppingBag') // redirect to the shopping cart page
+})
+
+// Post request to finish the order
+app.post('/payCart', (req, res) => { 
+    const data = JSON.parse(fs.readFileSync('./voorhees.json')) // read the json file
+    data.data.length = 0 // length of the data array becomes 0 (empty cart)
+
+    const stringData = JSON.stringify(data, null, 2) // turn the changed array to json object
+    fs.writeFileSync('voorhees.json', stringData) // overwrite the old json file
+
+    res.redirect('/') // redirect to the shirt create page
 })
 
 // Listen to port 8500
