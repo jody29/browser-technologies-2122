@@ -6,7 +6,7 @@ const fs = require('fs')
 const bodyParser = require('body-parser')
 require('dotenv').config()
 
-const PORT = 8500
+const PORT = process.env.PORT || 8500
 
 // Settings
 app.set('view engine', 'ejs') // set EJS as view engine
