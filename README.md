@@ -3,7 +3,6 @@
 
 [Live Demo](https://nerdy-shirt.herokuapp.com/)
 
-<<<<<<< HEAD
 ## Table of contents
 * [Wireflow]()
 * [Features]()
@@ -42,3 +41,10 @@ For the pleasurable layer I added a live preview of the shirt that the user crea
     <li>No mouse/trackpad: safari doesn't have tab as a default preference. This means that the user has to change some preferences to still be able to use the application when there is no mouse/trackpad available.</li>
   </ul>
 </details>
+<details>
+  <summary>Safari IOS</summary>
+  <ul>
+    <li>Turning off javascript: user is still able to send customize a shirt but won't have a live preview. The user also won't be able to continue the form where the user left off. When the user added the product to the cart, the user will still be able to edit the shirt afterwards.</li>
+  </ul>
+</details>
+
