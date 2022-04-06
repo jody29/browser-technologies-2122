@@ -37,3 +37,9 @@ h1 {
 input {
     width: 100%;
 }
+
+@media screen and (min-width: 600px) {
+    form {
+        margin-left: 0;
+    }
+}
