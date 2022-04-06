@@ -3,6 +3,7 @@
 
 [Live Demo](https://nerdy-shirt.herokuapp.com/)
 
+<<<<<<< HEAD
 ## Table of contents
 * [Wireflow]()
 * [Features]()
@@ -41,3 +42,7 @@ For the pleasurable layer I added a live preview of the shirt that the user crea
     <li>No mouse/trackpad: safari doesn't have tab as a default preference. This means that the user has to change some preferences to still be able to use the application when there is no mouse/trackpad available.</li>
   </ul>
 </details>
+=======
+## Wireflow
+![wireflow](https://user-images.githubusercontent.com/66092262/161967779-ef70a805-ee89-4694-9262-4daf2db7bad9.png)
+>>>>>>> 406b6ade2b51091053cda11f73c88ca8d0f7d650
