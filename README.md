@@ -220,6 +220,3 @@ For the pleasurable layer I added a live preview of the shirt that the user crea
 ![Nexus_4 2-09](https://user-images.githubusercontent.com/66092262/162198606-5c1db35d-d2f0-4fd0-9f5d-7ccb127f7511.png)
 * User no longer gets a live preview of the shirt that it is creating. But it still sees which color he has picked because the chosen label will have a different color. It can also see in the input which text it has filled in
 
-
-
-
