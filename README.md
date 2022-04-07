@@ -19,7 +19,7 @@ npm start
 ```
 
 # 📄 Wireflow
-![wireflow](https://user-images.githubusercontent.com/66092262/161967779-ef70a805-ee89-4694-9262-4daf2db7bad9.png)
+![wireflow2-10](https://user-images.githubusercontent.com/66092262/162253904-d7238847-9008-4b89-8e46-7366810ac7bf.png)
 
 # 🍰 Progressive enhancement
 
