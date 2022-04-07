@@ -1,3 +1,11 @@
 {
-  "data": []
+  "data": [
+    {
+      "color": "blue",
+      "gender": "male",
+      "size": "L",
+      "text": "test",
+      "id": "2f2c1e8f-5d6d-4339-b94e-b008de9f534d"
+    }
+  ]
 }
